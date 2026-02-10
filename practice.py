@@ -89,9 +89,27 @@ array = np.array([[1,2,3,4],
 
 
 #comparison operators
-scores = np.array([90, 80, 70, 60, 50])
-print(scores > 75) # boolean array indicating which scores are greater than 75
-# same for <, >=, <=, ==, !=
+# scores = np.array([90, 80, 70, 60, 50])
+# print(scores > 75) # boolean array indicating which scores are greater than 75
+# # same for <, >=, <=, ==, !=
 
+#broadcasting
+# virtually expanding dimensions to perform operations on arrays of different shapes
+# the dimensions hvae to be compatible for broadcasting to work
+# all same shape or one of the dimensions is 1
 
+# array1 = np.array([[1,2,3,4]])
+# array2 = np.array([[1],[2],[3],[4]])
 
+# print(array1.shape)
+# print(array2.shape)
+# # dimension are not same but one of them is 1
+# # if not we get valuse erroe
+# print(array1* array2)
+# # now 4 by 4
+
+#multiplication table
+array1 = np.array([[1],[2],[3],[4],[5],[6],[7],[8],[9],[10]])
+array2 = np.array([[1,2,3,4,5,6,7,8,9,10]])
+
+print(array1 * array2)
