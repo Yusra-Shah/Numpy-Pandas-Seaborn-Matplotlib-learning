@@ -11,19 +11,39 @@ import numpy as np
 # [1,2,3] *2 = [1,2,3,1,2,3]
 # we can also perform matrix operations on numpy arrays
 
-print(np.__version__)
-array = np.array([1, 2, 3])
-print(array)
-print(type(array))
+# print(np.__version__)
+# array = np.array([1, 2, 3])
+# print(array)
+# print(type(array))
 
-array = np.array('A')
-print(array.ndim)
-array = np.array([1,2,2])
-print(array.ndim)
-array = np.array([[1,2,3],[4,5,6]])
-print(array.ndim)
-array = np.array([[[1,2,3],[4,5,6]],[[7,8,9],[10,11,12]]])
-print(array.ndim)
-print(array.shape) # layers, rows, columns
-#slicing is the same as lists
-print(array[0]) # first layer
+# array = np.array('A')
+# print(array.ndim)
+# array = np.array([1,2,2])
+# print(array.ndim)
+# array = np.array([[1,2,3],[4,5,6]])
+# print(array.ndim)
+# array = np.array([[[1,2,3],[4,5,6]],[[7,8,9],[10,11,12]]])
+# print(array.ndim)
+# print(array.shape) # layers, rows, columns
+# #slicing is the same as lists
+# print(array[0]) # first layer
+
+
+array = np.array([[1,2,3,4],
+                  [5,6,7,8],
+                  [9,10,11,12]])
+#array[start:end:step]
+# : this is the slicing operator
+#arry(::-1) this will reverse the array
+#print(array[:,1]) # select the second column 
+#print(array[:,1:3]) # select the second to third column 
+#print(array[:,1::2]) # select the second to last column with a step of 2 (1,3)
+print(array[0:2,0:2])
+#select the first two rows and the first two columns
+
+
+
+
+
+
+
