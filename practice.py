@@ -74,7 +74,24 @@ array = np.array([[1,2,3,4],
 # print(np.unique(array)) # unique elements in the array
 
 
-#exercise
-radii = np.array([1,2,3,4,5])
+# #exercise
+# radii = np.array([1,2,3,4,5])
 
-print(np.pi * radii ** 2) # area of circles with given radii
+# print(np.pi * radii ** 2) # area of circles with given radii
+
+#elementwise operations
+# array1 = np.array([1,2,3])
+# array2 = np.array([4,5,6])
+
+# print(array1 + array2) # add two arrays elementwise
+# print(array1 - array2) # subtract two arrays elementwise
+# # same for multiplication and division and exponentiation
+
+
+#comparison operators
+scores = np.array([90, 80, 70, 60, 50])
+print(scores > 75) # boolean array indicating which scores are greater than 75
+# same for <, >=, <=, ==, !=
+
+
+
