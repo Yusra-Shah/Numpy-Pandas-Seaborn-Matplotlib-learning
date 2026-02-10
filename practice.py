@@ -61,15 +61,6 @@ array = np.array([[1,2,3,4],
 # print(np.sin(array)) # sine of each element
 # print(np.cos(array)) # cosine of each element
 # print(np.tan(array)) # tangent of each element
-# print(np.sum(array)) # sum of all elements
-# print(np.mean(array)) # mean of all elements
-# print(np.median(array)) # median of all elements
-# print(np.std(array)) # standard deviation of all elements
-# print(np.var(array)) # variance of all elements
-# print(np.min(array)) # minimum of all elements
-# print(np.max(array)) # maximum of all elements
-# print(np.argmin(array)) # index of minimum element
-# print(np.argmax(array)) # index of maximum element
 # print(np.sort(array)) # sort the array
 # print(np.unique(array)) # unique elements in the array
 
@@ -108,8 +99,25 @@ array = np.array([[1,2,3,4],
 # print(array1* array2)
 # # now 4 by 4
 
-#multiplication table
-array1 = np.array([[1],[2],[3],[4],[5],[6],[7],[8],[9],[10]])
-array2 = np.array([[1,2,3,4,5,6,7,8,9,10]])
+# #multiplication table
+# array1 = np.array([[1],[2],[3],[4],[5],[6],[7],[8],[9],[10]])
+# array2 = np.array([[1,2,3,4,5,6,7,8,9,10]])
 
-print(array1 * array2)
+# print(array1 * array2)
+
+#aggregate functions
+# array = np.array([[1,2,3,4,5],
+#                  [6,7,8,9,10]])
+# print(np.sum(array)) # sum of all elements
+# print(np.mean(array)) # mean of all elements
+# print(np.median(array)) # median of all elements
+# print(np.std(array)) # standard deviation of all elements
+# print(np.var(array)) # variance of all elements
+# print(np.min(array)) # minimum of all elements
+# print(np.max(array)) # maximum of all elements
+# print(np.argmin(array)) # index of minimum element
+# print(np.argmax(array)) # index of maximum element
+
+# print(np.sum(array, axis=0)) # sum of each column
+# print(np.sum(array, axis=1)) # sum of each row
+
