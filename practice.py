@@ -43,12 +43,38 @@ array = np.array([[1,2,3,4],
 
 
 #scalar arithmetic
-array = np.array([1,2,3])
-print(array + 1) # add 1 to each element
-print(array - 1) # subtract 1 from each element
-print(array * 2) # multiply each element by 2
-print(array / 2) # divide each element by 2
-print(array ** 2) # square each element
+# array = np.array([1,2,3])
+# print(array + 1) # add 1 to each element
+# print(array - 1) # subtract 1 from each element
+# print(array * 2) # multiply each element by 2
+# print(array / 2) # divide each element by 2
+# print(array ** 2) # square each element
+
+#vectorized operations
+
+#vector = asingle dimension
+
+# array = np.array([1,2,3])
+# print(np.sqrt(array)) # square root of each element
+# print(np.exp(array)) # exponential of each element
+# print(np.log(array)) # natural logarithm of each element
+# print(np.sin(array)) # sine of each element
+# print(np.cos(array)) # cosine of each element
+# print(np.tan(array)) # tangent of each element
+# print(np.sum(array)) # sum of all elements
+# print(np.mean(array)) # mean of all elements
+# print(np.median(array)) # median of all elements
+# print(np.std(array)) # standard deviation of all elements
+# print(np.var(array)) # variance of all elements
+# print(np.min(array)) # minimum of all elements
+# print(np.max(array)) # maximum of all elements
+# print(np.argmin(array)) # index of minimum element
+# print(np.argmax(array)) # index of maximum element
+# print(np.sort(array)) # sort the array
+# print(np.unique(array)) # unique elements in the array
 
 
+#exercise
+radii = np.array([1,2,3,4,5])
 
+print(np.pi * radii ** 2) # area of circles with given radii
