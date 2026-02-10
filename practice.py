@@ -38,12 +38,17 @@ array = np.array([[1,2,3,4],
 #print(array[:,1]) # select the second column 
 #print(array[:,1:3]) # select the second to third column 
 #print(array[:,1::2]) # select the second to last column with a step of 2 (1,3)
-print(array[0:2,0:2])
+#print(array[0:2,0:2])
 #select the first two rows and the first two columns
 
 
-
-
+#scalar arithmetic
+array = np.array([1,2,3])
+print(array + 1) # add 1 to each element
+print(array - 1) # subtract 1 from each element
+print(array * 2) # multiply each element by 2
+print(array / 2) # divide each element by 2
+print(array ** 2) # square each element
 
 
 
