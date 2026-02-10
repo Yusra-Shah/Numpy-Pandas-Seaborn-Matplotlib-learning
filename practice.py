@@ -121,3 +121,19 @@ array = np.array([[1,2,3,4],
 # print(np.sum(array, axis=0)) # sum of each column
 # print(np.sum(array, axis=1)) # sum of each row
 
+
+# filtering
+# refers to selecting elements from an array based on a condition
+array = np.array([[1,2,3,4,5,6,7],
+                  [8,9,10,11,12,13,14],
+                  [15,16,17,18,19,20,21]])
+# print(array[array > 4]) # select elements greater than 4 
+# print(array[array % 2 == 0]) # select even elements
+# print(array[array == 10]) # return an empty array since there are no elements equal to 10
+print(array[(array > 4) & (array % 2 == 1)]) 
+# select elements greater than 4 and odd
+
+#but to keep original shape we can use np.where
+
+print(np.where((array > 4) & (array % 2 == 1), array, 0))
+#np.where(condition, x, y) returns an array with elements from x where condition is true and elements from y where condition is false   
