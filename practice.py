@@ -130,10 +130,49 @@ array = np.array([[1,2,3,4,5,6,7],
 # print(array[array > 4]) # select elements greater than 4 
 # print(array[array % 2 == 0]) # select even elements
 # print(array[array == 10]) # return an empty array since there are no elements equal to 10
-print(array[(array > 4) & (array % 2 == 1)]) 
+# print(array[(array > 4) & (array % 2 == 1)]) 
 # select elements greater than 4 and odd
 
 #but to keep original shape we can use np.where
 
-print(np.where((array > 4) & (array % 2 == 1), array, 0))
+# print(np.where((array > 4) & (array % 2 == 1), array, 0))
 #np.where(condition, x, y) returns an array with elements from x where condition is true and elements from y where condition is false   
+
+
+# genetate random number
+
+random_num_gen = np.random.default_rng() # create a random number generator
+# print(random_num_gen.random()) # generate a random number between 0 and 1
+# print(random_num_gen.integers(1, 10)) # generate a random integer between 1 and 10
+# random_num_gen.integer(low,high,size)
+# high is exclusive
+# size: no of num to generate
+
+# print(random_num_gen.integers(1, 10, size=5)) # generate 5 random integers between 1 and 10
+
+#print(random_num_gen.integers(1, 10, size=(3,4))) # generate a 3 by 4 array of random integers between 1 and 10
+
+#random_num_gen = np.random.default_rng(seed= 1)
+# we always get the same result
+
+# np.random.seed(1) # set the seed for reproducibility
+
+# #uniform means uniform distriution#floationg point numbers between 0 and 1
+# print(np.random.uniform(0, 1, size=(3,4))) # generate a 3 by 4 array of random numbers between 0 and 1
+
+#shuffling array
+
+rng = np.random.default_rng()
+# array = np.array([1,2,3,4,5])
+# rng.shuffle(array) # shuffle the array in place
+# print(array)
+# rps=["rock","paper","scissors"]
+# # select = rng.choice(rps) # randomly select an element from the list]]
+# # print(select)
+# selects = rng.choice(rps, size=5) # randomly select 5 elements from the list
+# print(selects)
+
+emoji = ["😀","😂","😍","🤔","😎","😭","😡","👍"
+         ,"👎","🙏"]
+selects = rng.choice(emoji, size=(3,4)) # randomly select 5 elements from the list
+print(selects)
